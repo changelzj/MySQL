@@ -125,10 +125,4 @@ SELECT * FROM boys WHERE NOT EXISTS (
 )
 
 
-# 联合查询
--- 将多个语句查询的结果并到一起，查询列名称类型和顺序必须一致，使用union会去重。如果不希望去重，使用union ALL
 
-
-SELECT * FROM employees WHERE email LIKE '%a%'
-UNION
-SELECT * FROM employees WHERE department_id > 90
